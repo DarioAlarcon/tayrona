@@ -58,8 +58,59 @@ header img{
 
 .contact-footer p{
     text-align: center;
-    font-size: 20px;
+    font-size: 1.2rem;
     color: white;
     font-family: "Rubik";
     margin: 20px;
+}
+
+@media (max-width: 800px) {
+    .contact-section h1{
+        color: rgb(196, 250, 204);
+        text-align: center;
+        font-size: 2rem;
+        font-family: "Rubik";
+        font-weight: 400;
+        padding-bottom: 40px;
+    }
+    .contact-body{
+        display: flex;
+        flex-direction: column;
+    }
+    .half-container-contact{
+        padding: 0px;
+
+    }
+    .half-container-contact p{
+        text-align: center;
+        font-size: 20px;
+        color: white;
+        font-family: "Rubik";
+        margin:  0px 50px 20px;
+   }
+   .contact-footer p{
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+    font-family: "Rubik";
+    margin: 20px;
+    }
+    .contact-section h3{
+        
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+}
+@media (max-width: 350px) {
+    .half-container-contact p{
+        text-align: center;
+        font-size: 15px;
+        color: white;
+        font-family: "Rubik";
+        margin:  0px 50px 20px;
+   }
+    .contact-footer p{
+        font-size: 0.8rem;
+    }
 }
