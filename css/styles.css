@@ -27,6 +27,9 @@ header img{
 
 .main-div-left{
     width: 55%;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: 1s ease-in-out;
 }
 .main-div-left img{
     width: 100%;
@@ -84,6 +87,9 @@ header img{
     width: 70px;
     height: 70px;
     padding: 10px;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: 1s ease-in-out;
 }
 .icon-div img{
     width: 60%;
@@ -97,7 +103,15 @@ header img{
     font-family: "Rubik";
 }
 
-.baños-section{
+.baños-section h1{
+    color: rgb(60, 164, 50);
+    text-align: center;
+    font-family: "Rubik";
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+.baño-container{
     padding-top: 70px;
     display: flex;
 }
@@ -107,13 +121,15 @@ header img{
     flex-direction: column;
     align-items: center;
     height: 850px;
+    opacity: 0;
+    transition: 1s ease-in-out;
 }
 .center div{
-    height: 100px;
+    height: 80px;
 }
 
 .right div{
-    height: 200px;
+    height: 160px;
 }
 
 .div-baño img{
@@ -130,6 +146,20 @@ header img{
     font-family: "Rubik";
 }
 
+.info-cuartos{
+    transform: scale(0.5);
+    transition: 1s ease-in-out;
+}
+
+.info-cocina{
+    transform: scale(0.5);
+    transition: 1s ease-in-out;
+}
+
+.tranding{
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
 .cuartos-section{
     display: flex;
     align-items: center;
@@ -192,11 +222,6 @@ header img{
     }
   }
   
-  body {
-    padding: 10px;
-    font-size: 0.8rem;
-    background: var(--bg);
-  }
   
   .cards-wall {
     padding: 0px 0rem;
@@ -364,7 +389,7 @@ header img{
         height: auto;
         padding-bottom: 50px;
     }
-    .baños-section{
+    .baño-container{
         flex-direction: column;
     }
     .center div{
@@ -382,11 +407,6 @@ header img{
         font-family: "Rubik";
     }
 
-}
-.mensaje-temporal h1{
-  text-align: center;
-  font-size: 1rem;
-  color: red;
 }
 
 @media (max-width: 800px) {
@@ -513,4 +533,10 @@ header img{
     .div-baño img{
         height: 400px;
     }
+}
+
+.visible{
+    transform: scale(1);
+    opacity: 1;
+    transform: translateY(0px);
 }
