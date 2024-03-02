@@ -130,6 +130,161 @@ header img{
     font-family: "Rubik";
 }
 
+.cuartos-section{
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.cuartos-section p{
+    text-align: center;
+    font-family: "Rubik";
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+@media (min-width: 1440px) {
+    #tranding {
+      zoom: 1.5;
+    }
+  }
+  
+  @media (min-width: 2560px) {
+    #tranding {
+      zoom: 1.7;
+    }
+  }
+  
+  @media (min-width: 3860px) {
+    #tranding {
+      zoom: 2.5;
+    }
+  }
+  
+  body {
+    padding: 10px;
+    font-size: 0.8rem;
+    background: var(--bg);
+  }
+  
+  .cards-wall {
+    padding: 0px 0rem;
+    margin: 0 auto;
+  }
+  
+  
+  #tranding {
+    width: 500px;
+  }
+  
+  @media (max-width:5040px) {
+    #tranding {
+      padding: 3.5rem 0;
+    }
+  }
+  
+  #tranding .tranding-slider {
+    height: 22rem;
+    position: relative;
+  }
+  
+  .tranding-slide {
+    width: 100%;
+    height: 14rem;
+    margin: 0 2.5rem;
+    position: relative;
+  }
+  
+  @media (max-width:600px) {
+    #tranding .tranding-slider {
+      height: auto;
+      position: relative;
+    }
+    #tranding{
+      width: 100%;
+    }
+    
+  }
+  .tranding-slide .tranding-slide-img img {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .tranding-slide .tranding-slide-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .swiper-slide-shadow-left,
+  .swiper-slide-shadow-right {
+    display: none;
+  }
+  
+  .tranding-slider-control {
+    position: relative;
+    bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .tranding-slider-control .swiper-button-next {
+    left: 58% !important;
+    transform: translateX(-58%) !important;
+  }
+  
+  @media (max-width:990px) {
+    .tranding-slider-control .swiper-button-next {
+      left: 70% !important;
+      transform: translateX(-70%) !important;
+    }
+  }
+  
+  @media (max-width:450px) {
+    .tranding-slider-control .swiper-button-next {
+      left: 80% !important;
+      transform: translateX(-80%) !important;
+    }
+  }
+  
+  @media (max-width:990px) {
+    .tranding-slider-control .swiper-button-prev {
+      left: 30% !important;
+      transform: translateX(-30%) !important;
+    }
+  }
+  
+  @media (max-width:450px) {
+    .tranding-slider-control .swiper-button-prev {
+      left: 20% !important;
+      transform: translateX(-20%) !important;
+    }
+  }
+  
+  .tranding-slider-control .slider-arrow {
+    background: #f2f2f2;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    left: 42%;
+    transform: translateX(-42%);
+    filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+  }
+  
+  .tranding-slider-control .slider-arrow ion-icon {
+    font-size: 1rem;
+    color: #2C5B61;
+  }
+  
+  .tranding-slider-control .slider-arrow::after {
+    content: '';
+  }
+  
+
 .contact-section{
     padding: 20px;
     background-color: #181818;
@@ -208,6 +363,9 @@ header img{
         align-items: center
     }
 
+    .cuartos-section{
+        flex-direction: column;
+    }
     .main-div-left{
         width: 100%;
     }
