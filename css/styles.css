@@ -144,6 +144,20 @@ header img{
     font-weight: 400;
 }
 
+.cocina-section{
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.cocina-section p{
+    text-align: center;
+    font-family: "Rubik";
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
 @media (min-width: 1440px) {
     #tranding {
       zoom: 1.5;
@@ -365,6 +379,9 @@ header img{
 
     .cuartos-section{
         flex-direction: column;
+    }
+    .cocina-section{
+        flex-direction: column-reverse;
     }
     .main-div-left{
         width: 100%;
