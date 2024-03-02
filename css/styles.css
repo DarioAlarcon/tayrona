@@ -160,6 +160,34 @@ header img{
         font-size: 2rem;
     }
 
+    .items-section{
+        padding: 40px;
+    }
+
+    .items-section h1{
+        width: 100%;
+        text-align: center;
+        font-family: "Rubik";
+        font-size: 2rem;
+        font-weight: 400;
+        color: white;
+        padding-bottom: 40px;
+    }
+    
+    .items-section h2{
+        width: 100%;
+        text-align: center;
+        font-family: "Rubik";
+        font-size: 1.3rem;
+        font-weight: 400;
+        color: white;
+        padding-bottom: 70px;
+    }
+
+    .icon-body{
+        flex-direction: column;
+    }
+
     .contact-section h1{
         color: rgb(196, 250, 204);
         text-align: center;
@@ -200,6 +228,10 @@ header img{
 @media (max-width: 500px) {
     .main-div-right h2{
         font-size: 1.5rem;
+    }
+    .icon-div{
+        padding: 0px;
+        padding-bottom: 10px;
     }
 }
 @media (max-width: 350px) {
