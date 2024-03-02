@@ -44,6 +44,59 @@ header img{
     font-family: "Rubik";
     font-weight: 400;
 }
+.items-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px;
+    background-color: rgb(60, 164, 50);
+}
+.items-section h1{
+    width: 40%;
+    text-align: center;
+    font-family: "Rubik";
+    font-size: 2rem;
+    font-weight: 400;
+    color: white;
+    padding-bottom: 40px;
+}
+
+.items-section h2{
+    width: 60%;
+    text-align: center;
+    font-family: "Rubik";
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: white;
+    padding-bottom: 70px;
+}
+
+.icon-body{
+    display: flex;
+}
+.icon-div-big{
+    display: flex;
+}
+.icon-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+}
+.icon-div img{
+    width: 60%;
+}
+
+.icon-div p{
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    color: white;
+    font-family: "Rubik";
+}
+
 .contact-section{
     padding: 20px;
     background-color: #181818;
