@@ -97,6 +97,39 @@ header img{
     font-family: "Rubik";
 }
 
+.baños-section{
+    padding-top: 70px;
+    display: flex;
+}
+
+.div-baño{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 850px;
+}
+.center div{
+    height: 100px;
+}
+
+.right div{
+    height: 200px;
+}
+
+.div-baño img{
+    height: 450px;
+    padding-bottom: 30px;
+}
+
+.div-baño p{
+    width: 65%;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #181818;
+    font-family: "Rubik";
+}
+
 .contact-section{
     padding: 20px;
     background-color: #181818;
