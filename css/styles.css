@@ -90,6 +90,23 @@ header img{
 
 
 @media (max-width: 800px) {
+    .main-section{
+        flex-direction: column;
+        align-items: center
+    }
+
+    .main-div-left{
+        width: 100%;
+    }
+    .main-div-right{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        width: 100%;
+    }
+    .main-div-right h2{
+        font-size: 2rem;
+    }
+
     .contact-section h1{
         color: rgb(196, 250, 204);
         text-align: center;
@@ -126,6 +143,11 @@ header img{
         padding-bottom: 40px;
     }
 
+}
+@media (max-width: 500px) {
+    .main-div-right h2{
+        font-size: 1.5rem;
+    }
 }
 @media (max-width: 350px) {
     .half-container-contact p{
