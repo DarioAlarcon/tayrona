@@ -5,20 +5,50 @@
 header{
     position: sticky;
     background-color: white;
-    padding: 10px;
     padding-left: 50px;
 }
 .header-content{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 header h1{
     font-family: "Kdam Thmor Pro";
-    color: rgb(60, 164, 50);
-    font-size: 2.2rem;
+    color: #03588C;
+    font-size: 2.4rem;
+}
+header h2{
+    font-family: "Kdam Thmor Pro";
+    color: #03588C;
+    font-size: 0.87rem;
 }
 header img{
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
+    padding-right: 5px;
+}
+
+.left-zone{
+    align-items: center;
+    display: flex;
+}
+
+.right-zone{
+    display: flex;
+}
+
+.right-zone h1{
+    color: #03588C;
+    font-size: 1.5rem;
+    padding-right: 30px;
+    font-family: "Rubik";
+    font-weight: 400;
+    transition: 0.7s;
+}
+
+.right-zone h1:hover {
+    font-weight: bold;
+    font-size: 1.7rem;
 }
 
 .main-section{
@@ -104,11 +134,12 @@ header img{
 }
 
 .baños-section h1{
-    color: rgb(60, 164, 50);
+    width: 65%;
+    color: #03588C;
     text-align: center;
     font-family: "Rubik";
-    font-size: 3.5rem;
-    font-weight: 400;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .baño-container{
@@ -117,15 +148,16 @@ header img{
 }
 
 .div-baño{
+    width: 33.3%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 850px;
+    height: 900px;
     opacity: 0;
     transition: 1s ease-in-out;
 }
 .center div{
-    height: 80px;
+    height: 180px;
 }
 
 .right div{
@@ -152,6 +184,8 @@ header img{
 }
 
 .info-cocina{
+    padding-right: 30px;
+    width: 500px;
     transform: scale(0.5);
     transition: 1s ease-in-out;
 }
@@ -183,26 +217,44 @@ header img{
 }
 
 .cocina-section h1{
-    color: rgb(60, 164, 50);
-    text-align: center;
+    color: #03588C;
+    text-align: start;
     font-family: "Rubik";
-    font-size: 3rem;
-    font-weight: 400;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.cocina-section h2{
+    cursor: pointer;
+    color: #0584d3;
+    text-align: start;
+    font-family: "Rubik";
+    text-decoration: underline;
+    transition: 0.7s;
+}
+
+.cocina-section h2:hover{
+    color: #61c2ff;
 }
 
 .cocina-section{
+    padding-top: 70px;
+    padding-bottom: 70px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .cocina-section p{
-    text-align: center;
+    width: 80%;
+    text-align: start;
     font-family: "Rubik";
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 400;
 }
+
 
 @media (min-width: 1440px) {
     #tranding {
@@ -232,6 +284,9 @@ header img{
   #tranding {
     width: 500px;
   }
+  #main-slider {
+    width: 100%;
+  }
   
   @media (max-width:5040px) {
     #tranding {
@@ -243,10 +298,12 @@ header img{
     height: 22rem;
     position: relative;
   }
+  #main-slider .tranding-slider {
+    position: relative;
+  }
   
   .tranding-slide {
     width: 100%;
-    height: 14rem;
     margin: 0 2.5rem;
     position: relative;
   }
@@ -342,7 +399,7 @@ header img{
 
 .contact-section{
     padding: 20px;
-    background-color: #181818;
+    background-color: #03588C;
 }
 
 .contact-section h1{
@@ -387,6 +444,7 @@ header img{
 @media (max-width: 1100px) {
     .div-baño{
         height: auto;
+        width: 100%;
         padding-bottom: 50px;
     }
     .baño-container{
@@ -408,7 +466,11 @@ header img{
     }
 
 }
-
+@media (max-width: 1000px) {
+    .right-zone{
+        display: none;
+    }
+}
 @media (max-width: 800px) {
     header{
         padding-left: 10px;
@@ -423,6 +485,21 @@ header img{
     }
     .cocina-section{
         flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .cocina-section p{
+        width: 100%;
+    }
+    .img-cocina-img{
+        display: flex;
+        align-items: center;
+    }
+    .info-cocina{
+        padding-right: 0px;
+        width: 100%;
+        transform: scale(0.5);
+        transition: 1s ease-in-out;
     }
     .main-div-left{
         width: 100%;
@@ -503,6 +580,22 @@ header img{
 
 }
 @media (max-width: 500px) {
+    .cocina-section img{
+        width: 100%;
+    }
+}
+@media (max-width: 500px) {
+    header h1{
+        font-size: 1.8rem;
+    }
+    header h2{
+        font-size: 0.67rem;
+    }
+    header img{
+        width: 50px;
+        height: 50px;
+        padding-right: 5px;
+    }
     .main-div-right h2{
         font-size: 1.5rem;
     }
